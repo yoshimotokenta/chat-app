@@ -9,10 +9,17 @@
 </div>
 
 <div class="side-rooms">
+  <% current_user.rooms.each do |room| %>
+    <div class="side-room">
+      <div class="room-name">
+        <a herf="#"><%= room.name %></a>
+      </div>
+    </div>
+  <% end %>
   <div class="side-room">
      <div class="room-name">
      <a herf="#">techroom1</a>
-    </div> 　　
+    </div> 
   </div> 
   <div class="side-room">
      <div class="room-name">
